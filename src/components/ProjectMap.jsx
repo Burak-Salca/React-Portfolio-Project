@@ -24,9 +24,13 @@ export default function ProjectMap(props) {
             ))}
         </div>
         <div className="flex justify-between">
+            <a href={project.githubLink} target="_blank">
             <button className="font-Inter font-medium text-base underline text-[#3730A3] dark:text-specialWhite">Github</button>
+            </a>
+            <a href={project.siteLink} target='_blank'>
             <button className="font-Inter font-medium text-base underline text-[#3730A3] dark:text-specialWhite">
             {t.viewSite}</button>
+            </a>
         </div>
     </div>
   )

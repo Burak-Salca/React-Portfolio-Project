@@ -11,12 +11,17 @@ export default function Projects() {
       title: t.projectsTitle.first,  
       description: t.projectsParagraph.first,
       technologies: ["react", "redux", "axios"],
+      githubLink: "https://github.com/Burak-Salca/pizza-project",
+      siteLink:"https://pizza-project-gilt.vercel.app/"
+    
     },
     {
       img: "\\assets\\project2.png",
       title: t.projectsTitle.second,
       description: t.projectsParagraph.second,
       technologies: ["react", "tailwind", "toastify"],
+      githubLink: "https://github.com/Burak-Salca/frontendChallenge",
+      siteLink:"https://frontend-challenge-tan.vercel.app/"
     }
   ];
 

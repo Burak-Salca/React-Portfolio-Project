@@ -15,8 +15,12 @@ export default function Footer() {
         </div>
         <div className="flex gap-5 justify-center sm:justify-start">
           <button className="font-Inter font-medium text-lg text-[#0A0A14] dark:text-[#AEBCCF]">{t.personalBlog}</button>
+          <a href="https://github.com/Burak-Salca" target='_blank'>
           <button className="font-Inter font-medium text-lg text-[#00AB6B] ">Github</button>
+          </a>
+          <a href="https://www.linkedin.com/in/burak-sal%C3%A7a-5473501b6/" target='_blank' >
           <button className="font-Inter font-medium text-lg text-[#0077B5] ">Linkedin</button>
+          </a>
         </div>
       </div>
     </div>
