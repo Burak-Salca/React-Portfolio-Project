@@ -4,7 +4,7 @@ import Header from '../layouts/Header'
 import Hero from '../layouts/Hero'
 import Skills from "../layouts/Skills"
 import Profile from "../layouts/Profile"
-import Projects from "../layouts/Projects"
+import Projects from "../../public/Projects"
 import Footer from "../layouts/Footer"
 
 

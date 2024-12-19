@@ -38,7 +38,7 @@ export default function Hero() {
           rel="noopener noreferrer"
           className="border rounded-md px-6 py-3 text-[#3730A3] font-Inter font-medium text-lg flex justify-center items-center gap-1 bg-[#FFFFFF] border-[#3730A3] dark:bg-[#383838] dark:border-specialWhite">
 
-            <img className="w-6 h-6 filter-logo-filter-light dark:filter-logo-filter-dark" src="\public\logos\github-mark.svg" />
+            <img className="w-6 h-6 filter-logo-filter-light dark:filter-logo-filter-dark" src="\public\github-mark.svg" />
 
             <p className="bg-[#FFFFFF] text-[#3730A3] dark:bg-[#383838] dark:text-specialWhite">Github</p>
           </a>
@@ -51,7 +51,7 @@ export default function Hero() {
           className="border rounded-md px-6 text-[#3730A3] font-Inter font-medium text-lg 
           flex justify-center items-center gap-1 bg-[#FFFFFF] border-[#3730A3] dark:bg-[#383838] dark:border-specialWhite">
 
-            <img className="w-6 h-6 filter-logo-filter-light dark:filter-logo-filter-dark " src="\public\logos\LI-In-Bug.svg"alt="LinkedIn"/>
+            <img className="w-6 h-6 filter-logo-filter-light dark:filter-logo-filter-dark " src="\public\LI-In-Bug.svg"alt="LinkedIn"/>
 
             <p className="bg-[#FFFFFF] text-[#3730A3] dark:bg-[#383838] dark:text-specialWhite">Linkedin</p>
           </a>
@@ -59,7 +59,7 @@ export default function Hero() {
       </div>
 
       <div className="flex-1">
-        <img src="public\image\foto.jpg" className="w-full sm:w-auto max-w-md rounded-3xl" /> 
+        <img src="public\foto.jpg" className="w-full sm:w-auto max-w-md rounded-3xl" /> 
       </div>
 
     </div>
