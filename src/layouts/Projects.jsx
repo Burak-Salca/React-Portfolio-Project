@@ -8,13 +8,13 @@ export default function Projects() {
 
   const projects = [
     {
-      img: "\\src\\image\\project1.png",  
+      img: "\\public\\image\\project1.png",  
       title: t.projectsTitle.first,  
       description: t.projectsParagraph.first,
       technologies: ["react", "redux", "axios"],
     },
     {
-      img: "\\src\\image\\project2.png",
+      img: "\\public\\image\\project2.png",
       title: t.projectsTitle.second,
       description: t.projectsParagraph.second,
       technologies: ["react", "tailwind", "toastify"],
