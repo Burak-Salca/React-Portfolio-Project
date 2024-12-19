@@ -1,20 +1,19 @@
 import React from 'react'
-import translations from '../src/translation';
-import ProjectMap from '../src/components/ProjectMap';
-import { useLanguage } from '../src/actions/LangChange';
+import ProjectMap from '../components/ProjectMap';
+import { useLanguage } from '../actions/LangChange';
 
 export default function Projects() {
   const {t} =useLanguage();
 
   const projects = [
     {
-      img: "\\public\\project1.png",  
+      img: "\\public\\assets\\project1.png",  
       title: t.projectsTitle.first,  
       description: t.projectsParagraph.first,
       technologies: ["react", "redux", "axios"],
     },
     {
-      img: "\\public\\project2.png",
+      img: "\\public\\assets\\project2.png",
       title: t.projectsTitle.second,
       description: t.projectsParagraph.second,
       technologies: ["react", "tailwind", "toastify"],

@@ -1,5 +1,4 @@
 import React from 'react'
-import translations from '../translation';
 import { useLanguage } from '../actions/LangChange';
 
 
