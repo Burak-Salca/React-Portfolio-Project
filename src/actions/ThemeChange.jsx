@@ -5,7 +5,7 @@ const ThemeContext = createContext();
 export const useTheme = ()=> useContext(ThemeContext);
 
 export default function ThemeChange({children}) {
-    const [theme , setTheme] = useState("light");
+    const [theme , setTheme] = useState("dark");
 
     const handleThemeChange = ()=>{
         setTheme ((prevTheme) => (prevTheme === "light" ? "dark" : "light"));

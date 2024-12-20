@@ -62,8 +62,8 @@ const translations = {
         },
 
         "projectsTitle": {
-            "first": "Pizza Sipariş Web Sitesi",
-            "second": "Portfolyo Web Sitesi",
+            "first": "Pizza Sipariş Websitesi",
+            "second": "Portfolyo Websitesi",
             
         },
 
@@ -143,8 +143,8 @@ const translations = {
         },
 
         "projectsTitle": {
-            "first": "Pizza Order Web Sites",
-            "second": "Portfolio Web Site",
+            "first": "Pizza Order Website",
+            "second": "Portfolio Website",
         },
 
         "projectsParagraph": {
