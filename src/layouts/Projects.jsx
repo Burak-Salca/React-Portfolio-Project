@@ -10,7 +10,7 @@ export default function Projects() {
       img: "\\assets\\project1.png",  
       title: t.projectsTitle.first,  
       description: t.projectsParagraph.first,
-      technologies: ["react", "redux", "axios"],
+      technologies: ["react", "HTML", "CSS"],
       githubLink: "https://github.com/Burak-Salca/pizza-project",
       siteLink:"https://pizza-project-gilt.vercel.app/"
     
@@ -22,6 +22,14 @@ export default function Projects() {
       technologies: ["react", "tailwind", "toastify"],
       githubLink: "https://github.com/Burak-Salca/frontendChallenge",
       siteLink:"https://frontend-challenge-tan.vercel.app/"
+    },
+    {
+      img: "\\assets\\project3.png",
+      title: t.projectsTitle.three,
+      description: t.projectsParagraph.first,
+      technologies: ["react", "axios", "redux"],
+      githubLink: "https://github.com/Burak-Salca/Pizza_Project",
+      siteLink:"https://pizza-project-v2.vercel.app/"
     }
   ];
 

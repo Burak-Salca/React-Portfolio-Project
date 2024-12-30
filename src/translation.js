@@ -62,15 +62,17 @@ const translations = {
         },
 
         "projectsTitle": {
-            "first": "Pizza Sipariş Websitesi",
+            "first": "Pizza Sipariş Websitesi V1",
             "second": "Portfolyo Websitesi",
-            
+            "three": "Pizza Sipariş Websitesi V2"
         },
 
         "projectsParagraph": {
-            "first": "Bu proje, React kullanılarak geliştirilen bir Tek Sayfa Uygulama (SPA) olarak tamamlandı ve sprint boyunca öğrenilen kavramlar pekiştirildi. Projede, React Router ile sayfa yönlendirmeleri yapıldı, form bileşenleri oluşturularak doğrulama işlemleri gerçekleştirildi ve sayfalar arası veri akışı, herhangi bir global state management aracı kullanılmadan, Prop-Lifting yöntemiyle sağlandı. Uygulamanın işleyişi, Cypress ile yazılan testlerle başarıyla doğrulandı. Tasarım odaklı bir yaklaşım benimsenerek, mobil uyumlu tasarım Figma aracılığıyla birebir uygulandı. Bu süreçte, modern web geliştirme teknikleriyle birlikte, React ekosistemindeki temel yapı taşları etkin bir şekilde kullanılarak proje başarıyla tamamlandı.",
+            "first": "Bu projede, yalnızca HTML ve CSS kullanarak, verilen Figma tasarımına birebir uygun, mobil ve masaüstü uyumlu statik bir web sayfası oluşturulması hedeflenmektedir. Anlamsal (semantic) HTML yapısı ve CSS kullanılarak renkler, fontlar (Roboto Condensed, Barlow, Quattrocento, Satisfy) ve responsive tasarım detayları uygulanacaktır. JavaScript kullanılmayacak ve form işlevsellikten ziyade statik bir görsel yapı olarak tasarlanacaktır. Bu sayede, temel frontend geliştirme becerileri ile estetik ve düzenli bir kod yapısı oluşturulması amaçlanmaktadır.",
 
             "second": "Bu proje, Frontend konularında edinilen bilgilerin bir araya getirilmesiyle, kişisel bir web sayfası oluşturulmasını hedeflemiştir. Proje kapsamında, modern web teknolojileri kullanılarak mobil uyumlu ve kullanıcı dostu bir arayüz geliştirilmiştir. React ile sayfa yapısı oluşturulmuş, bileşen tabanlı mimari kullanılarak yeniden kullanılabilir ve modüler bir yapı sağlanmıştır. Axios ile API entegrasyonu yapılarak,  API üzerinden veri alışverişi gerçekleştirilmiştir. Ayrıca, tasarımda CSS ve Tailwind sınıfları kullanılarak estetik ve uyumlu bir görünüm elde edilmiştir. Proje, tamamen çalışır durumda ve gramer hatalarından arındırılmış bir şekilde tamamlanmış olup, Workintech programı boyunca öğrenilen kavramların başarıyla uygulandığını göstermektedir. Bu kişisel web sayfası, geliştiricinin Frontend becerilerini sergileyebileceği bir portföy çalışması olarak tasarlanmıştır.",
+
+            "three": "Bu proje, React kullanılarak geliştirilen bir Tek Sayfa Uygulama (SPA) olarak tamamlandı ve sprint boyunca öğrenilen kavramlar pekiştirildi. Projede, React Router ile sayfa yönlendirmeleri yapıldı, form bileşenleri oluşturularak doğrulama işlemleri gerçekleştirildi ve sayfalar arası veri akışı, herhangi bir global state management aracı kullanılmadan, Prop-Lifting yöntemiyle sağlandı. Uygulamanın işleyişi, Cypress ile yazılan testlerle başarıyla doğrulandı. Tasarım odaklı bir yaklaşım benimsenerek, mobil uyumlu tasarım Figma aracılığıyla birebir uygulandı. Bu süreçte, modern web geliştirme teknikleriyle birlikte, React ekosistemindeki temel yapı taşları etkin bir şekilde kullanılarak proje başarıyla tamamlandı."
 
         },
 
@@ -143,14 +145,19 @@ const translations = {
         },
 
         "projectsTitle": {
-            "first": "Pizza Order Website",
+            "first": "Pizza Order Website V1",
             "second": "Portfolio Website",
+            "three": "Pizza Order Website V1",
         },
 
         "projectsParagraph": {
-            "first": "This project was completed as a Single Page Application (SPA) developed using React and the concepts learned during the sprint were reinforced. In the project, page redirects were made with React Router, form components were created and validation processes were performed and the data flow between pages was provided with the Prop-Lifting method without using any global state management tools. The operation of the application was successfully verified with tests written with Cypress. By adopting a design-oriented approach, mobile-friendly design was implemented one-on-one with Figma. In this process, the project was successfully completed by effectively using the basic building blocks of the React ecosystem together with modern web development techniques.",
+            "first": "In this project, it is aimed to create a static web page that is exactly the same as the given Figma design, compatible with mobile and desktop, using only HTML and CSS. Semantic HTML structure and CSS will be used to apply colors, fonts (Roboto Condensed, Barlow, Quattrocento, Satisfy) and responsive design details. JavaScript will not be used and the form will be designed as a static visual structure rather than functionality. In this way, it is aimed to create an aesthetic and organized code structure with basic frontend development skills.",
 
             "second": "This project aimed to create a personal web page by bringing together the knowledge gained in Frontend topics. Within the scope of the project, a mobile-friendly and user-friendly interface was developed using modern web technologies. The page structure was created with React, and a reusable and modular structure was provided using component-based architecture. API integration was made with Axios, and data exchange was carried out via API. In addition, an aesthetic and harmonious appearance was achieved by using CSS and Tailwind classes in the design. The project was completed in a fully functional and grammatical error-free manner, demonstrating that the concepts learned during the Workintech program were successfully applied. This personal web page was designed as a portfolio study where the developer can showcase their Frontend skills.",
+
+            "three": "This project was completed as a Single Page Application (SPA) developed using React and the concepts learned during the sprint were reinforced. In the project, page redirects were made with React Router, form components were created and validation processes were performed, and the data flow between pages was provided with the Prop-Lifting method without using any global state management tool. The operation of the application was successfully verified with tests written with Cypress. By adopting a design-oriented approach, the mobile-friendly design was implemented one-on-one through Figma. In this process, the project was completed successfully by effectively using the basic building blocks of the React ecosystem along with modern web development techniques.",
+
+
         },
 
         "viewSite": "View Site",
