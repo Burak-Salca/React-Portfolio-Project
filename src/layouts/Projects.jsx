@@ -26,7 +26,7 @@ export default function Projects() {
     {
       img: "\\assets\\project3.png",
       title: t.projectsTitle.three,
-      description: t.projectsParagraph.first,
+      description: t.projectsParagraph.three,
       technologies: ["react", "axios", "redux"],
       githubLink: "https://github.com/Burak-Salca/Pizza_Project",
       siteLink:"https://pizza-project-v2.vercel.app/"
