@@ -12,9 +12,9 @@ const translations = {
 
         "hireMe": "Ekibe al",
 
-        "heroh1": "Yaratıcı Düşünür Minimalizm Aşığı",
+        "heroh1": "Kod yazmak sadece bir iş değil, bir problem çözme sanatıdır.",
 
-        "heroh2": "Merhaba ben Burak. Ben full-stack bir geliştiriciyim. Mükemmel kullanıcı deneyimleriyle sağlam ve ölçeklenebilir frontend ürünleri üretecek bir geliştirici arıyorsanız, tanışalım!",
+        "heroh2": "Merhaba, ben Burak. Full-stack bir geliştiriciyim. Eğer hem kullanıcı dostu, hem de sağlam, ölçeklenebilir yazılım çözümleri geliştirecek birini arıyorsanız, tanışalım!",
 
         "skillsList": [
         {
@@ -94,9 +94,9 @@ const translations = {
 
         "hireMe": "Hire me",
 
-        "heroh1": "Creative thinker Minimalism lover",
+        "heroh1": "Writing code is not just a job; it's an art of problem-solving.",
 
-        "heroh2": "Hi, I'm Burak. I'm a full-stack developer. If you're looking for a developer who will create robust and scalable frontend products with great user experiences, let's meet!",
+        "heroh2": "Hi, I'm Burak, a full-stack developer. If you're looking for someone to create both user-friendly and robust, scalable software solutions, let's connect!",
 
         "skillsList": [
         {
