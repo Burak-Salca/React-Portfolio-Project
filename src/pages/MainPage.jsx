@@ -33,9 +33,7 @@ export default function MainPage() {
         <div className="w-full max-w-screen-lg mt-5">
             <Profile/>
         </div>
-
-        <div className="w-full max-w-screen-lg h-0 border border-[#4338CA] dark:border-specialWhite"></div>
-
+        <div className="w-full max-w-screen-lg h-0 border border-[#4338CA] dark:border-specialWhite mt-8"></div>
         <div className='w-full max-w-screen-lg'>
             <Projects/>
         </div>

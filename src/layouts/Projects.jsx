@@ -13,7 +13,6 @@ export default function Projects() {
       technologies: ["react", "HTML", "CSS"],
       githubLink: "https://github.com/Burak-Salca/pizza-project",
       siteLink:"https://pizza-project-gilt.vercel.app/"
-    
     },
     {
       img: "\\assets\\project2.png",
@@ -35,7 +34,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="flex flex-col gap-10">
-      <div className="font-Inter font-semibold text-5xl text-[#1F2937] dark:text-specialWhite pt-10 text-center sm:text-start">
+      <div className="font-Inter font-semibold text-5xl text-[#1F2937] dark:text-specialWhite pt-4 text-center sm:text-start">
         {t.projects}
       </div>
       <div className="flex flex-wrap justify-between gap-10">
