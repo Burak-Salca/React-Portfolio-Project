@@ -1,7 +1,7 @@
 # 🌟 Kişisel Web Sayfası Projesi
 
 ## 📝 Proje Hakkında
-Bu proje, Frontend alanında edinilen bilgileri bir araya getirerek modern ve kişisel bir web sayfası oluşturmayı amaçlamaktadır. Workintech programı kapsamında öğrenilen konseptlerin başarılı bir şekilde uygulandığı bu portfolyo çalışması, geliştiricinin Frontend yeteneklerini sergileyebileceği bir platform olarak tasarlanmıştır.
+Bu proje, Frontend alanında edinilen bilgileri bir araya getirerek modern ve kişisel bir web sayfası oluşturmayı amaçlamaktadır. Frontend kapsamında öğrenilen konseptlerin başarılı bir şekilde uygulandığı bu portfolyo çalışması, geliştiricinin Frontend yeteneklerini sergileyebileceği bir platform olarak tasarlanmıştır.
 
 ## 🛠️ Kullanılan Teknolojiler
 
