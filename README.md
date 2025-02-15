@@ -1,8 +1,30 @@
-# React + Vite
+# 🌟 Kişisel Web Sayfası Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Proje Hakkında
+Bu proje, Frontend alanında edinilen bilgileri bir araya getirerek modern ve kişisel bir web sayfası oluşturmayı amaçlamaktadır. Workintech programı kapsamında öğrenilen konseptlerin başarılı bir şekilde uygulandığı bu portfolyo çalışması, geliştiricinin Frontend yeteneklerini sergileyebileceği bir platform olarak tasarlanmıştır.
 
-Currently, two official plugins are available:
+## 🛠️ Kullanılan Teknolojiler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend Teknolojileri
+- **⚛️ React.js**: Komponent tabanlı mimari için
+- **🎨 Tailwind CSS**: Modern ve responsive tasarım için
+- **🔄 Redux**: Durum yönetimi için
+- **📱 HTML & CSS**: Temel web yapısı ve stillendirme için
+- **💻 JavaScript**: Dinamik fonksiyonellik için
+- **🔌 Axios**: API entegrasyonu için
+
+## ✨ Özellikler
+- 📱 Mobil uyumlu tasarım
+- 🎯 Kullanıcı dostu arayüz
+- 🔄 Yeniden kullanılabilir komponent yapısı
+- 🌐 API entegrasyonu
+- 🎨 Modern ve estetik görünüm
+- 📦 Modüler kod yapısı
+
+## 🎯 Proje Hedefleri
+- ✅ Modern web teknolojilerini kullanma
+- ✅ Responsive tasarım prensiplerini uygulama
+- ✅ Komponent tabanlı geliştirme yapma
+- ✅ API entegrasyonunu başarıyla gerçekleştirme
+- ✅ Clean code prensiplerine uygun geliştirme
+- ✅ Frontend yeteneklerini sergileme
