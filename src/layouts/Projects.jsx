@@ -1,36 +1,66 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import ProjectMap from '../components/ProjectMap';
 import { useLanguage } from '../actions/LangChange';
+import axios from 'axios';
 
 export default function Projects() {
-  const {t} =useLanguage();
+  const { t } = useLanguage();
+  const [projects, setProjects] = useState([]);
 
-  const projects = [
-    {
-      img: "\\assets\\project1.png",  
-      title: t.projectsTitle.first,  
-      description: t.projectsParagraph.first,
-      technologies: ["react", "HTML", "CSS"],
-      githubLink: "https://github.com/Burak-Salca/pizza-project",
-      siteLink:"https://pizza-project-gilt.vercel.app/"
-    },
-    {
-      img: "\\assets\\project2.png",
-      title: t.projectsTitle.second,
-      description: t.projectsParagraph.second,
-      technologies: ["react", "tailwind", "toastify"],
-      githubLink: "https://github.com/Burak-Salca/frontendChallenge",
-      siteLink:"https://frontend-challenge-tan.vercel.app/"
-    },
-    {
-      img: "\\assets\\project3.png",
-      title: t.projectsTitle.three,
-      description: t.projectsParagraph.three,
-      technologies: ["react", "axios", "redux"],
-      githubLink: "https://github.com/Burak-Salca/Pizza_Project",
-      siteLink:"https://pizza-project-v2.vercel.app/"
-    }
-  ];
+  useEffect(() => {
+    const fetchPinnedRepos = async () => {
+      try {
+        const response = await axios({
+          method: 'POST',
+          url: 'https://api.github.com/graphql',
+          headers: {
+            'Authorization': `bearer ${process.env.REACT_APP_GITHUB_TOKEN}`,
+            'Content-Type': 'application/json',
+          },
+          data: {
+            query: `
+              query {
+                user(login: "Burak-Salca") {
+                  pinnedItems(first: 6) {
+                    edges {
+                      node {
+                        ... on Repository {
+                          name
+                          description
+                          url
+                          homepageUrl
+                          languages(first: 3) {
+                            nodes {
+                              name
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `
+          }
+        });
+
+        const pinnedRepos = response.data.data.user.pinnedItems.edges.map(({ node }) => ({
+          img: "/assets/project-default.png",
+          title: node.name,
+          description: node.description || "No description available",
+          technologies: node.languages.nodes.map(lang => lang.name),
+          githubLink: node.url,
+          siteLink: node.homepageUrl || node.url
+        }));
+
+        setProjects(pinnedRepos);
+      } catch (error) {
+        console.error('Error fetching pinned repos:', error);
+      }
+    };
+
+    fetchPinnedRepos();
+  }, []);
 
   return (
     <div id="projects" className="flex flex-col gap-10">
@@ -39,9 +69,9 @@ export default function Projects() {
       </div>
       <div className="flex flex-wrap justify-between gap-10">
         {projects.map((project, index) => (
-        <ProjectMap key={index} project={project} />
+          <ProjectMap key={index} project={project} />
         ))}
       </div>
     </div>
-  )
+  );
 }
