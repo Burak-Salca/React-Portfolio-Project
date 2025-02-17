@@ -25,7 +25,7 @@ export default function Profile() {
               <h3>Eskişehir</h3>
               <h3>{t.educationDetail.firstPart}</h3>
               <h3>{t.educationDetail.secondPart}</h3>
-              <h3>Backend, Frontend</h3>
+              <h3>Backend, Frontend, QA</h3>
             </div>
           </div>
         </div>

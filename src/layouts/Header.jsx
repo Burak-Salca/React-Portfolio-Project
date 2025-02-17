@@ -26,7 +26,7 @@ export default function Header() {
           </li>
           <li>
             <a href="#profile" className="hover:text-specialWhite transition">
-              Profil
+              {t.profile}
             </a>
           </li>
           <li>
@@ -36,7 +36,7 @@ export default function Header() {
           </li>
           <li>
             <a href="#connect" className=" dark:hover:text-specialWhite transition">
-              İletişim
+              {t.contact}
             </a>
           </li>
         </ul>

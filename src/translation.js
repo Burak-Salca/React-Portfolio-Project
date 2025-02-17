@@ -10,11 +10,15 @@ const translations = {
 
         "projects": "Projeler",
 
-        "hireMe": "Ekibe al",
+        "profile": "Profil",
 
-        "heroh1": "Kod yazmak sadece bir iş değil, bir problem çözme sanatıdır.",
+        "projects": "Projeler",
 
-        "heroh2": "Merhaba, ben Burak. Full-stack bir geliştiriciyim. Eğer hem kullanıcı dostu, hem de sağlam, ölçeklenebilir yazılım çözümleri geliştirecek birini arıyorsanız, tanışalım!",
+        "contact": "İletişim",
+
+        "heroh1": "Kod bir problem çözme sanatıdır.",
+
+        "heroh2": " Bir Elektrik ve Elektronik Mühendisi olarak, full-stack geliştiriciyim. Frontend, backend ve QA alanlarında projeler geliştirerek kendimi sürekli geliştiriyorum.",
 
         "skillsList": [
         {
@@ -57,8 +61,8 @@ const translations = {
         "aboutMe": "Hakkımda",
 
         "aboutMeParagraph": {
-            "firstPart": "Güçlü bir büyüme zihniyetine sahip, öğrenmeye ve yeni zorluklarla sürekli olarak gelişmeye istekli, tutkulu bir tam yığın geliştiriciyim.",
-            "secondPart": " Otomasyon mühendisi olarak 2 yıllık deneyim kazandıktan sonra, yazılım geliştirmeye geçmeye ve Workintech'te yoğun bir 6 aylık tam yığın geliştirme programını tamamlayarak ön uç, arka uç ve bilgisayar bilimlerindeki uzmanlığımı geliştirmeye karar verdim."
+            "firstPart": "Güçlü araştırma yeteneğine, problem çözme becerilerine ve öğrenme isteğine sahip bir full-stack geliştiriciyim. 1.5 yıl otomasyon mühendisi olarak çalıştıktan sonra, yazılım alanında kendimi geliştirmeye karar verdim. ",
+            "secondPart": " Bu süreçte çeşitli bootcamplere katılarak backend, frontend ve QA alanlarında projeler geliştirerek deneyim kazandım. Kullandığım teknolojiler arasında Java, JavaScript, React, Spring Boot, PostgreSQL, Docker, Jenkins, Tailwind CSS, Redux ve Jest yer alıyor. Ayrıca, test süreçlerinde Selenium, Postman ve TestNG kullanarak kaliteli ve sürdürülebilir yazılım çözümleri üretmeye odaklanıyorum."
         },
 
         "projectsTitle": {
@@ -78,9 +82,9 @@ const translations = {
 
         "viewSite": "Siteyi görüntüle",
 
-        "letsWork": "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
+        "letsWork": "İletişim için aşağıdaki bağlantıları kullanabilirsiniz",
 
-        "personalBlog": "Kişisel Blog"
+        "resume": "Özgeçmiş"
     },
     "en": {
         "buttonText": {
@@ -90,13 +94,15 @@ const translations = {
 
         "skills": "Skills",
 
+        "profile": "Profiles",
+
         "projects": "Projects",
 
-        "hireMe": "Hire me",
+        "contact": "Contact",
 
-        "heroh1": "Writing code is not just a job; it's an art of problem-solving.",
+        "heroh1": "Writing code is an art of problem-solving.",
 
-        "heroh2": "Hi, I'm Burak, a full-stack developer. If you're looking for someone to create both user-friendly and robust, scalable software solutions, let's connect!",
+        "heroh2": "As an Electrical and Electronics Engineer, I am a full-stack developer. I constantly improve myself by developing projects in the frontend, backend and QA areas.",
 
         "skillsList": [
         {
@@ -139,9 +145,9 @@ const translations = {
         "aboutMe": "About Me",
 
         "aboutMeParagraph": {
-            "firstPart": "I am a passionate full-stack developer with a strong growth mindset, eager to learn and continuously improve through new challenges.",
+            "firstPart": "I am a full-stack developer with strong research skills, problem-solving skills, and a desire to learn. After working as an automation engineer for 1.5 years, I decided to improve myself in the software field.",
 
-            "secondPart": "After gaining 2 years of experience as an automation engineer, I decided to transition into software development and enhance my expertise in front-end, back-end, and computer science by completing an intensive 6-month full-stack development program at Workintech."
+            "secondPart": "During this process, I gained experience by developing projects in the backend, frontend, and QA fields by participating in various bootcamps. The technologies I use include Java, JavaScript, React, Spring Boot, PostgreSQL, Docker, Jenkins, Tailwind CSS, Redux, and Jest. In addition, I focus on producing quality and sustainable software solutions using Selenium, Postman, and TestNG in testing processes."
         },
 
         "projectsTitle": {
@@ -162,9 +168,9 @@ const translations = {
 
         "viewSite": "View Site",
 
-        "letsWork": "Let’s work together on your next product.",
+        "letsWork": "You can use the links below to contact us",
 
-        "personalBlog": "Personal Blog"
+        "resume": "Resume"
     }
   };
   

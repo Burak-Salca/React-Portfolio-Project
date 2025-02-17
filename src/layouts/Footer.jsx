@@ -29,7 +29,7 @@ export default function Footer() {
             target="_blank"
             className="font-Inter font-medium text-lg hover:text-blue-400 duration-300 ease-in-out"
           >
-            Özgeçmiş
+            {t.resume}
           </a>
           <a href="https://github.com/Burak-Salca" target='_blank'>
             <button className="font-Inter font-medium text-lg">Github</button>

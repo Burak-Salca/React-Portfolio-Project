@@ -48,9 +48,9 @@ export default function Skills() {
           {t.skills}
         </h1>
       </div>
-      <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-12 sm:gap-12 sm:justify-between mt-4 mb-8">
+      <div className="grid grid-cols-2 place-items-center sm:flex sm:flex-wrap gap-12 sm:gap-12 sm:justify-between mt-4 mb-8">
         {skills.map((skill, index) => (
-          <div key={index} className="flex-1 min-w-[200px] max-w-[300px]">
+          <div key={index} className="w-full max-w-[200px] sm:flex-1 sm:min-w-[200px] sm:max-w-[300px]">
             <SkillMap title={skill.title} image={skill.img} />
           </div>
         ))}
