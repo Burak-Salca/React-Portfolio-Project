@@ -14,12 +14,18 @@ export default {
     fontFamily: {
       'Inter': 'Inter'
     },
-    extend: {
-      filter: {
-        'logo-filter-light': 'invert(0%) brightness(100%)',
-        'logo-filter-dark': 'invert(100%) brightness(0%)',
-      }
-    },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.filter-logo-filter-light': {
+          filter: 'invert(23%) sepia(31%) saturate(4070%) hue-rotate(232deg) brightness(99%) contrast(94%)'
+        },
+        '.filter-logo-filter-dark': {
+          filter: 'invert(76%) sepia(11%) saturate(343%) hue-rotate(181deg) brightness(94%) contrast(87%)'
+        }
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 }
