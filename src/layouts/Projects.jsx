@@ -11,12 +11,19 @@ export default function Projects() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        // GitHub token'ı ile istek yapma
+        // GitHub token kontrolü
+        const token = import.meta.env.VITE_GITHUB_TOKEN;
+        const headers = token
+          ? {
+              'Authorization': `Bearer ${token}`,
+              'Accept': 'application/vnd.github.v3+json'
+            }
+          : {
+              'Accept': 'application/vnd.github.v3+json'
+            };
+
         const response = await fetch('https://api.github.com/users/Burak-Salca/repos?sort=pushed&direction=desc&per_page=100', {
-          headers: {
-            'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-            'Accept': 'application/vnd.github.v3+json'
-          }
+          headers
         });
 
         if (!response.ok) {
@@ -34,10 +41,14 @@ export default function Projects() {
               try {
                 // Topics'leri çekmek için ayrı bir istek
                 const topicsResponse = await fetch(`https://api.github.com/repos/Burak-Salca/${project.name}/topics`, {
-                  headers: {
-                    'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-                    'Accept': 'application/vnd.github.mercy-preview+json'
-                  }
+                  headers: token
+                    ? {
+                        'Authorization': `Bearer ${token}`,
+                        'Accept': 'application/vnd.github.mercy-preview+json'
+                      }
+                    : {
+                        'Accept': 'application/vnd.github.mercy-preview+json'
+                      }
                 });
 
                 if (!topicsResponse.ok) {
