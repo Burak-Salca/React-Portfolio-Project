@@ -24,7 +24,7 @@ export default function Switch() {
             <span>|</span>
             <button onClick={handleLanguageChange}>
                 <h1>
-                    <span className="font-bold text-specialWhite dark:text-specialBlue" >{t.buttonText.firstPart}</span>
+                    <span className="font-bold  text-[#4338CA] dark:text-specialWhite" >{t.buttonText.firstPart}</span>
                     <span className="font-bold" > {t.buttonText.secondPart}</span>
                 </h1>
             </button>

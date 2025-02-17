@@ -12,29 +12,32 @@ export default function Header() {
   };
 
   return (
-    <div>
+    <div  >
     <header className="bg-white text-[#6B7280] py-4">
       <nav className="w-full flex justify-between items-center px-1">
-        <span className="font-Inter font-semibold text-2xl text-[#7B61FF] origin-center rotate-45 w-16 h-16 rounded-full flex justify-center items-center bg-[#EEEBFF] dark:bg-specialBlue">
+        <span className="font-Inter font-semibold text-2xl text-[#FFFFFF] dark:text-[#252128] origin-center rotate-45 w-16 h-16 rounded-full flex justify-center items-center dark:bg-specialWhite bg-[#7B61FF]">
           B
         </span>
         <ul className="flex gap-6 items-center"> 
           <li>
-            <a href="#skills" className="hover:text-blue-400 transition">
+            <a href="#skills" className="hover:text-specialWhite transition">
               {t.skills}
             </a>
           </li>
           <li>
-          <a href="#projects" className="hover:text-blue-400 transition">
+            <a href="#profile" className="hover:text-specialWhite transition">
+              Profil
+            </a>
+          </li>
+          <li>
+            <a href="#projects" className="hover:text-specialWhite transition">
               {t.projects}
             </a>
           </li>
           <li>
-            <button
-              onClick={handleHireMeClick}
-              className="py-5 px-10 rounded-md border border-[#3730A3] !text-specialBlue bg-white">
-              {t.hire}
-            </button>
+            <a href="#connect" className=" dark:hover:text-specialWhite transition">
+              İletişim
+            </a>
           </li>
         </ul>
       </nav>
