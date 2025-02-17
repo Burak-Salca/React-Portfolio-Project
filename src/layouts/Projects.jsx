@@ -14,7 +14,7 @@ export default function Projects() {
           method: 'POST',
           url: 'https://api.github.com/graphql',
           headers: {
-            'Authorization': `bearer ${process.env.REACT_APP_GITHUB_TOKEN}`,
+            'Authorization': `bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
             'Content-Type': 'application/json',
           },
           data: {
