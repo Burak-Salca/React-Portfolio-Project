@@ -11,7 +11,7 @@ import Footer from "../layouts/Footer"
 export default function MainPage() {
   return (
     <div >
-        <div className="w-full max-w-full px-6 mx-auto overflow-x-hidden box-border flex flex-col items-center gap-10"> 
+        <div className="w-full max-w-full p-6 mx-auto overflow-x-hidden box-border flex flex-col items-center gap-10"> 
             <div > 
                 <Switch/>
             </div>
