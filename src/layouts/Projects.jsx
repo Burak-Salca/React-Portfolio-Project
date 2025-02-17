@@ -11,7 +11,18 @@ export default function Projects() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('https://api.github.com/users/Burak-Salca/repos?sort=pushed&direction=desc&per_page=100');
+        // GitHub token'ı ile istek yapma
+        const response = await fetch('https://api.github.com/users/Burak-Salca/repos?sort=pushed&direction=desc&per_page=100', {
+          headers: {
+            'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+            'Accept': 'application/vnd.github.v3+json'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
         const allProjects = await response.json();
         
         // Her repo için topics'leri çek
@@ -20,20 +31,37 @@ export default function Projects() {
             .filter(project => project.stargazers_count > 0)
             .sort((a, b) => b.stargazers_count - a.stargazers_count)
             .map(async (project) => {
-              // Topics'leri çekmek için ayrı bir istek
-              const topicsResponse = await fetch(`https://api.github.com/repos/Burak-Salca/${project.name}/topics`, {
-                headers: {
-                  'Accept': 'application/vnd.github.mercy-preview+json'
+              try {
+                // Topics'leri çekmek için ayrı bir istek
+                const topicsResponse = await fetch(`https://api.github.com/repos/Burak-Salca/${project.name}/topics`, {
+                  headers: {
+                    'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+                    'Accept': 'application/vnd.github.mercy-preview+json'
+                  }
+                });
+
+                if (!topicsResponse.ok) {
+                  throw new Error(`HTTP error! status: ${topicsResponse.status}`);
                 }
-              });
-              const { names: topics } = await topicsResponse.json();
-              
-              return {
-                title: project.name,
-                githubLink: project.html_url,
-                siteLink: project.homepage || project.html_url,
-                technologies: [...new Set([...topics, project.language].filter(Boolean))]
-              };
+
+                const topicsData = await topicsResponse.json();
+                const topics = topicsData.names || []; // Eğer names yoksa boş array kullan
+                
+                return {
+                  title: project.name,
+                  githubLink: project.html_url,
+                  siteLink: project.homepage || project.html_url,
+                  technologies: [...new Set([...topics, project.language].filter(Boolean))]
+                };
+              } catch (error) {
+                // Eğer topics çekilemezse sadece dil bilgisini kullan
+                return {
+                  title: project.name,
+                  githubLink: project.html_url,
+                  siteLink: project.homepage || project.html_url,
+                  technologies: project.language ? [project.language] : []
+                };
+              }
             })
         );
         

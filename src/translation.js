@@ -16,7 +16,7 @@ const translations = {
 
         "contact": "İletişim",
 
-        "heroh1": "Kod bir problem çözme sanatıdır.",
+        "heroh1": "Kod yazmak, bir problem çözme sanatıdır.",
 
         "heroh2": " Bir Elektrik ve Elektronik Mühendisi olarak, full-stack geliştiriciyim. Frontend, backend ve QA alanlarında projeler geliştirerek kendimi sürekli geliştiriyorum.",
 
